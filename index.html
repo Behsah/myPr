@@ -79,10 +79,15 @@
             cursor: pointer;
             border-radius: 5px;
         }
+        input, button {
+            width: 100%;
+            max-width: 300px;
+        }
 
         /* 🎉 POP-UP STYLING */
         #popup {
-            width: 600px;
+            width: 90%;
+            max-width: 600px;
             display: none; /* Hidden by default */
             position: fixed;
             top: 50%;
@@ -138,7 +143,16 @@
                 width: 90%;
                 margin: auto; /* Ensures centering */
             }
+            body {
+                background-attachment: scroll;
+            }
         }
+        @media (max-width: 1024px) {
+            #form {
+                width: 80%;
+            }
+        }
+
 
 
     </style>
