@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -40,8 +40,9 @@
             display: flex;
             justify-content: center;
             align-items: center;
-            height: 100vh;
+            min-height: 100vh; /* Ensures it doesn't shrink */
             width: 100%;
+            padding: 20px;
         }
 
             #formContainer::before {
@@ -127,7 +128,7 @@
                 button:focus {
                     outline: 2px solid #FFD700; /* Add a focus outline for accessibility */
                 }
-              @media (max-width: 600px) {
+        @media (max-width: 600px) {
             #formContainer {
                 height: auto; /* Allows it to expand naturally */
                 padding: 50px 20px; /* Adds breathing space */
@@ -138,6 +139,8 @@
                 margin: auto; /* Ensures centering */
             }
         }
+
+
     </style>
 </head>
 <body>
