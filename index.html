@@ -7,7 +7,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Noto+Nastaliq+Urdu&display=swap" rel="stylesheet">
 
-    <title>Login Form</title>
+    <title>nowruz</title>
     <style>
         * {
             padding: 0;
@@ -187,23 +187,14 @@
     <div id="popup">
         <h2><span id="userName"></span> عزيز، سال نو مبارك!</h2>
         <p style="font-size:20px;">
-            همه ساله بخت تو &nbsp;&nbsp;&nbsp;پیروز باد
-            <br />
-            شبان سیه &nbsp;&nbsp;&nbsp;بر تو &nbsp;&nbsp;&nbsp;نوروز باد
-            <br />
-            <br />
-            با درود
-            <br />
-            سالی سرشار از تندرستی  و بهروزی  برای شما و خانواده محترمتان آرزومندم.
-            <br />
-            ارادتمند &nbsp;&nbsp;&nbsp; وحید بهزاد
+            عزیزِ جان نوروزَت پیروز باد ، دوستدار شما ساریفر
             <br />
             نوروز <span class="numbers">۱۴۰۴</span>
         </p>
-        <button onclick="closePopup()">بستن</button>
-        <!--<p id="poet">
+        <button onclick="choosingFaal()">از خیام بشنوید</button>
+        <p id="poet">
             &nbsp;
-        </p>-->
+        </p>
 
     </div>
 
@@ -222,33 +213,33 @@
         function closePopup() {
             document.getElementById("popup").style.display = "none";
         }
-//        function choosingFaal() {
-//            let x = [
-//                `چون عهده نمی‌شود کسی فردا را
-//<br>
-//  حالی خوش دار این دل پر سودا را`,
-//                `یک کوزه شراب تا به هم نوش کنیم
-//<br>
-//زآن پیش که کوزه‌ها کنند از گل ما`,
-//                `
-//بر چهره‌ی گل نسیم نوروز خوش است
-//<br>
-//در صحن چمن روی دل‌افروز خوش است`,
-//                `می نوش به ماهتاب ای ماه که ماه
-//<br>
-//بسیار بتابد و نیابد ما را`,
-//                `
-//صوفی! مذهب عشق از پی شرع نیست
-//<br>
-//باده‌ی خوش که در دست نمی‌گیرد کس`];
-//            let max = 3;
-//            let min = 0;
-//            let r = (Math.random() * (max - min + 1)) + min;
+        function choosingFaal() {
+            let x = [
+                `چون عهده نمی‌شود کسی فردا را
+<br>
+  حالی خوش دار این دل پر سودا را`,
+                `یک کوزه شراب تا به هم نوش کنیم
+<br>
+زآن پیش که کوزه‌ها کنند از گل ما`,
+                `
+بر چهره‌ی گل نسیم نوروز خوش است
+<br>
+در صحن چمن روی دل‌افروز خوش است`,
+                `می نوش به ماهتاب ای ماه که ماه
+<br>
+بسیار بتابد و نیابد ما را`,
+                `
+صوفی! مذهب عشق از پی شرع نیست
+<br>
+باده‌ی خوش که در دست نمی‌گیرد کس`];
+            let max = 3;
+            let min = 0;
+            let r = (Math.random() * (max - min + 1)) + min;
             
-//            r = Math.floor(r);
+            r = Math.floor(r);
            
-//            document.getElementById("poet").innerHTML = "\"" + x[r] +"\"";
-//        }
+            document.getElementById("poet").innerHTML = "\"" + x[r] +"\"";
+        }
     </script>
 
 </body>
